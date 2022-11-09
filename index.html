@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-interviewquestions3</title>
+</head>
+<body>
+    <h1 align="center">HTML Interview Q&A</h1>
+    <h1 align="center">Day-3</h1>
+    <h3>14. Write a code to insert an image?</h3>
+    <b>Code:</b><br>
+    <pre>
+    &lt;img src="address of the link"&gt;
+    </pre>
+    <b>Output:</b><br>
+    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Masterhead(web).svg" width="300" height="250" alt="404 error">
+    <h3>15. Create a form contain input fields like name age email and contact?</h3>  
+    <b>Code:</b><br>
+    <pre>
+    &lt;form action="#"&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input required value="" name="name" id="name" type="text"&gt;
+        &lt;label for="age"&gt;Age&lt;/label&gt;
+        &lt;input required value="" name="age" id="age" type="digits"&gt;
+        &lt;label for="email"&gt;Email&lt;/label&gt;
+        &lt;input required value="" name="email" id="email"  type="email"&gt;
+        &lt;label for="no"&gt;Contact&lt;/label&gt;
+        &lt;input value="" name="no" id="no" required type="digits"&gt;
+    &lt;/form&gt;
+    </pre>
+    <b>Output:</b><br><br>
+    <form action="#">
+    <label for="name">Name:</label>
+    <input required value="" name="name" id="name" type="text"><br><br>
+    <label for="age">Age:</label>
+    <input required value="" name="age" id="age" type="digits"><br><br>
+    <label for="email">Email:</label>
+    <input required value="" name="email" id="email" type="email"><br><br>
+    <label for="no">Contact:</label>
+    <input value="" name="no" id="no" required type="digits"><br><br>
+    </form>
+    <h3>16. Create a table and explain how to acheive colspan?</h3>
+    <b>Code:</b><br>
+    <pre>
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th colspan="2"&gt;Designation&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;Rohan&lt;/td&gt;
+        &lt;td&gt;Front-end Dev&lt;/td&gt;
+        &lt;td&gt;Backend Dev&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;Vihan&lt;/td&gt;
+        &lt;td&gt;Front-end Dev&lt;/td&gt;
+        &lt;td&gt;Backend Dev&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <b>Output:</b><br><br>
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th colspan="2">Designation</th>
+        </tr>
+        <tr>
+        <td>Rohan</td>
+        <td>Front-end Dev</td>
+        <td>Backend Dev</td>
+        </tr>
+        <tr>
+        <td>Vihan</td>
+        <td>Front-end Dev</td>
+        <td>Backend Dev</td>
+        </tr>
+    </table>
+    <h3>17. Create radio button (MERN, MEAN: course) and checkbox(HTML, CSS, React, Node: technology) and explain the difference between these two?</h3>
+    <b>Code:</b><br>
+    <pre>
+    &lt;input type="radio" value="MERN" name="course" id="course"&gt;
+    &lt;label for="course"&gt;MERN&lt;/label&gt;
+    &lt;input type="radio" value="MEAN" name="course" id="course"&gt;
+    &lt;label for="course"&gt;MEAN&lt;/label&gt;
+    
+    &lt;input type="checkbox" value="HTML" name="technology-1" id="technology"&gt;
+    &lt;label for="technology"&gt;HTML&lt;/label&gt;
+        
+    &lt;input type="checkbox" value="CSS" name="technology-2" id="technology"&gt;
+    &lt;label for="technology"&gt;CSS&lt;/label&gt;
+        
+    &lt;input type="checkbox" value="React" name="technology-3" id="technology"&gt;
+    &lt;label for="technology"&gt;React&lt;/label&gt;
+        
+    &lt;input type="checkbox" value="Node" name="technology-4" id="technology"&gt;
+    &lt;label for=""&gt;Node&lt;/label&gt;<br><br>
+    </pre>
+    
+
+    <b>Output:</b><br>
+    <h5>Radio button</h5>
+    <input type="radio" value="MERN" name="course" id="course">
+<label for="course">MERN</label>
+<input type="radio" value="MEAN" name="course" id="course">
+<label for="course">MEAN</label>
+
+<h5>Checkbox</h5>
+<input type="checkbox" value="HTML" name="technology-1" id="technology">
+<label for="technology">HTML</label>
+
+<input type="checkbox" value="CSS" name="technology-2" id="technology">
+<label for="technology">CSS</label>
+
+<input type="checkbox" value="React" name="technology-3" id="technology">
+<label for="technology">React</label>
+
+<input type="checkbox" value="Node" name="technology-4" id="technology">
+<label for="">Node</label><br><br>
+<table border="1" cellpadding="6">
+    <tr>
+        <th bgcolor="silver" width="400">Radio</th>
+        <th bgcolor="silver" width="400">Checkbox</th>
+    </tr>
+    <tr>
+        <td width="400">Its is used when only one option to be selected out of several available options.</td>
+        <td width="400">Checkbox allow one or many options to be selected.</td>
+    </tr>
+    <tr>
+        <td width="400">Radio button is presented as small circle on the screen.</td>
+        <td width="400">Checkbox is presented as small square box on the screen.</td>
+    </tr>
+    <tr>
+        <td width="400">It is used when you want to limit the user’s choice to just one option from the range provided.</td>
+        <td width="400">It is used when you want to allow user to select multiple options.</td>
+    </tr>
+    <tr>
+        <td height="20" width="400"></td>
+        <td height="20" width="400"></td>
+    </tr>
+</table>
+</body>
+</html>
